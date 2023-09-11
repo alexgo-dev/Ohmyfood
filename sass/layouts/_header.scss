@@ -1,0 +1,6 @@
+header {
+    height : 3.75rem;
+    width: 100%;
+    box-shadow: 0 3px 5px rgb(146, 139, 139);
+    @include flex-center;
+}

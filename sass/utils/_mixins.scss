@@ -1,0 +1,14 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin button-style {
+    border: none;
+    background: $gradient;
+    border-radius: 25px;
+    font-weight: 400;
+    padding: 1.25rem;
+    cursor: pointer;
+}

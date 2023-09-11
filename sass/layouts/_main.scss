@@ -1,0 +1,15 @@
+.main {
+    &__location {
+        height: 4,375rem;
+        background-color: #EAEAEA;
+        @include flex-center;
+    }
+    &__hero {
+        flex-direction: column;
+        background-color: #F6F6F6;
+        @include flex-center;
+        &__btn {
+            @include button-style;
+        }
+    }
+}

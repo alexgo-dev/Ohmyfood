@@ -1,0 +1,46 @@
+html {
+  font-family: "Robot", sans-serif;
+}
+
+h1 {
+  font-family: "Shrikhand", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.main__location {
+  height: 4, 375rem;
+  background-color: #EAEAEA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__hero {
+  flex-direction: column;
+  background-color: #F6F6F6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__hero__btn {
+  border: none;
+  background: linear-gradient(to top, #9356dc, #FF79DA 80%);
+  border-radius: 25px;
+  font-weight: 400;
+  padding: 1.25rem;
+  cursor: pointer;
+}
+
+header {
+  height: 3.75rem;
+  width: 100%;
+  box-shadow: 0 3px 5px rgb(146, 139, 139);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */
