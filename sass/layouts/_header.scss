@@ -1,6 +1,17 @@
 header {
-    height : 3.75rem;
+    height: toRem(96);
     width: 100%;
-    box-shadow: 0 3px 5px rgb(146, 139, 139);
+    box-shadow: 0 3px 5px rgb(129, 125, 125);
     @include flex-center;
+    @media screen and (min-width: 768px) {
+        height: toRem(80);
+    }
+    img {
+        height: auto;
+        width: toRem(170);
+        @media screen and (min-width: 768px) {
+            height: auto;
+            width: toRem(250);
+        }
+    }
 }

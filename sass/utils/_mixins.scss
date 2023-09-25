@@ -5,10 +5,10 @@
 }
 
 @mixin button-style {
-    border: none;
     background: $gradient;
-    border-radius: 25px;
     font-weight: 400;
-    padding: 1.25rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 35px;
     cursor: pointer;
 }

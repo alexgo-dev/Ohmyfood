@@ -1,5 +1,9 @@
+@import "./utils/functions";
 @import "./utils/variables";
+@import "./utils/keyframes";
 @import "./utils/mixins";
-@import "./base/base";
+@import "./base/general";
+@import "./components/cards";
 @import "./layouts/main";
 @import "./layouts/header";
+@import "./layouts/footer";
