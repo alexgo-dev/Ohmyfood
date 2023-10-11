@@ -1,0 +1,89 @@
+.restaurants {
+    display: flex;
+    flex-direction: column;
+    padding: toRem(32) 0rem toRem(48) 0rem;
+    margin-top: toRem(60);
+    @media screen and (min-width: $breakpoint) {
+        padding-left: toRem(160);
+        padding-right: toRem(160);
+    }
+
+    &__title {
+        padding-left: toRem(18);
+    }
+
+    &__card {
+        position: relative;
+        background: white;
+        border-radius: 15px;
+        margin: toRem(16);
+        height: 250px;
+        @media screen and (min-width: $breakpoint) {
+        margin-right: toRem(80);
+        }
+        }
+
+    &__image {
+        object-fit: cover;
+        width: 100%;
+        height: 250px;
+        max-height: 11em;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    &__name {
+        display: flex;
+        padding-left: toRem(20);
+        h3 {
+            display: flex;
+            align-items: center;
+        }
+        i {
+            right: toRem(16);
+        }
+    }
+}
+
+.restaurants__name h3 {
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: toRem(8);
+}
+
+.card__subtitle {
+    font-size: 17px;
+    font-weight: 300;
+    padding-left: toRem(20);
+}
+
+.card__subtitle p {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+.new {
+    position: absolute;
+    color: #008766;
+    background-color: $tertiary-color;
+    border: toRem(5) solid $tertiary-color;
+    border-radius: toRem(5);
+    right: 5%;
+    top: 5%;
+}
+
+.restaurants__container {
+    box-sizing: border-box;
+    @media screen and (min-width: $breakpoint) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.fa-heart {
+    position: absolute;
+    cursor: pointer;
+    font-size: 1.2em;
+  }

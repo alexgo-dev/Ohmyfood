@@ -1,15 +1,108 @@
 .main {
     &__location {
-        height: 4,375rem;
-        background-color: #EAEAEA;
+        height: toRem(70);
+        background-color: #eaeaea;
+        border: none;
         @include flex-center;
+        &__searchbar {
+            @media screen and (min-width: $breakpoint) {
+                margin-left: toRem(30);
+            }
+        }
+        input {
+            border: none;
+            background-color: #eaeaea;
+            font-weight: 700;
+            color: #353535;
+            text-align: center;
+        }
+        i {
+            @media screen and (min-width: $breakpoint) {
+                position: absolute;
+            }
+        }
     }
     &__hero {
         flex-direction: column;
-        background-color: #F6F6F6;
+        background-color: #f6f6f6;
+        padding-bottom: toRem(40);
         @include flex-center;
+        text-align: center;
+        &__title {
+            font-weight: 700;
+            font-size: 40px;
+            margin-bottom: toRem(15);
+        }
+            &__text {
+            font-weight: 300;
+            font-size: 18px;
+            margin-bottom: toRem(25);
+        }
         &__btn {
             @include button-style;
+            a {
+                color: white;
+            }
         }
+    }
+    &__info {
+        @include flex-center;
+        flex-direction: column;
+        padding: toRem(40) toRem(17);
+        h2 {
+            align-self: flex-start;
+            margin-top: toRem(55);
+            margin-bottom: toRem(35);
+
+            @media screen and (min-width: $breakpoint) {
+                padding-left: toRem(180);
+            }
+        }
+        &__container {
+            @media screen and (min-width: $breakpoint) {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                width: 80%;
+                padding-right: toRem(90);
+            }
+        }
+        &__step {
+            display: flex;
+            align-items: center;
+            width: auto;
+            margin-bottom: toRem(25);
+            padding: toRem(15) toRem(15) toRem(15) 0;
+            border-radius: 20px;
+            gap: toRem(20);
+            background-color: #f6f6f6;
+            cursor: pointer;
+            @media screen and (min-width: $breakpoint) {
+                width: 25%;
+            }
+            &__number {
+                @include flex-center;
+                position: relative;
+                width: toRem(24);
+                height: toRem(24);
+                border-radius: 30px;
+                color: white;
+                background-color: $main-color;
+                left: -9px;
+            }
+        }
+    }
+}
+
+.fa-heart {
+    cursor: pointer;
+    &:hover {
+        display: inline-block;
+        animation: fill 1s ease-in-out;
+        font-weight: bold;
+        background: linear-gradient(to bottom, $main-color, $secondary-color);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 }

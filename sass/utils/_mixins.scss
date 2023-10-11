@@ -7,8 +7,21 @@
 @mixin button-style {
     border: none;
     background: $gradient;
-    border-radius: 25px;
+    border-radius: 35px;
     font-weight: 400;
     padding: 1.25rem;
     cursor: pointer;
+    color: white;
+}
+
+@mixin ellipse {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+@mixin font-shri{
+    font-family: shrikhand;
+    font-weight: 400;
+    text-align: center;
 }

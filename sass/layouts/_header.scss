@@ -1,6 +1,17 @@
 header {
-    height : 3.75rem;
+    height: toRem(60);
     width: 100%;
     box-shadow: 0 3px 5px rgb(146, 139, 139);
     @include flex-center;
+    @media screen and (min-width: $breakpoint) {
+        height: toRem(80);
+    }
+    img {
+        width: toRem(170);
+        height: auto;
+        @media screen and (min-width: $breakpoint) {
+            width: auto;
+            width: toRem(250);
+        }
+    }
 }

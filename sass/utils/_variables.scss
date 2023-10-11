@@ -1,15 +1,14 @@
 // Font-Family
 
-$font-text : "Robot", sans-serif;
+$font-text : "Roboto", sans-serif;
 $font-title : "Shrikhand", sans-serif;
 
 // Colors
 
-$color-lightgreen : #99E2D0;
-$color-green : #008766;
-$color-lightblue : #89C8FA;
-$color-blue : #003A68;
-$color-purple : #9356dc;
-$color-pink : #FF79DA;
+$main-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
 
-$gradient : linear-gradient(to top, $color-purple, $color-pink 80%);
+$gradient : linear-gradient(to top, $main-color, $secondary-color);
+
+$breakpoint: 1024px;
