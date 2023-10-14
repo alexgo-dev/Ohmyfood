@@ -1,6 +1,7 @@
 .restaurants {
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: toRem(32) 0rem toRem(48) 0rem;
     margin-top: toRem(60);
     @media screen and (min-width: $breakpoint) {
@@ -12,16 +13,27 @@
         padding-left: toRem(18);
     }
 
+    &__containers {
+        box-sizing: border-box;
+        @media screen and (min-width: $breakpoint) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
     &__card {
         position: relative;
         background: white;
         border-radius: 15px;
         margin: toRem(16);
         height: 250px;
+        max-width: 600px;
         @media screen and (min-width: $breakpoint) {
-        margin-right: toRem(80);
+            min-width: 600px;
+            max-width: initial;
+            margin-right: toRem(80);
         }
-        }
+    }
 
     &__image {
         object-fit: cover;
@@ -74,16 +86,8 @@
     top: 5%;
 }
 
-.restaurants__container {
-    box-sizing: border-box;
-    @media screen and (min-width: $breakpoint) {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
 .fa-heart {
     position: absolute;
     cursor: pointer;
     font-size: 1.2em;
-  }
+}

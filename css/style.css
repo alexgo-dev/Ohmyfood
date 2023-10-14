@@ -49,6 +49,7 @@ a {
 .restaurants {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 2rem 0rem 3rem 0rem;
   margin-top: 3.75rem;
 }
@@ -61,15 +62,27 @@ a {
 .restaurants__title {
   padding-left: 1.125rem;
 }
+.restaurants__containers {
+  box-sizing: border-box;
+}
+@media screen and (min-width: 1024px) {
+  .restaurants__containers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .restaurants__card {
   position: relative;
   background: white;
   border-radius: 15px;
   margin: 1rem;
   height: 250px;
+  max-width: 600px;
 }
 @media screen and (min-width: 1024px) {
   .restaurants__card {
+    min-width: 600px;
+    max-width: initial;
     margin-right: 5rem;
   }
 }
@@ -120,16 +133,6 @@ a {
   border-radius: 0.3125rem;
   right: 5%;
   top: 5%;
-}
-
-.restaurants__container {
-  box-sizing: border-box;
-}
-@media screen and (min-width: 1024px) {
-  .restaurants__container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 .fa-heart {
@@ -469,6 +472,7 @@ header img {
 
 .container {
   background-color: #f6f6f6;
+  max-width: 600px;
   margin-top: -3rem;
   border-radius: 25px 25px 0 0;
   position: relative;
@@ -544,7 +548,6 @@ header img {
   display: flex;
   flex-direction: row;
   height: 4.3rem;
-  overflow: hidden;
 }
 .choice__card__txt {
   display: flex;
