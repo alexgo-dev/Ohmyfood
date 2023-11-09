@@ -1,7 +1,7 @@
 header {
     height: toRem(60);
     width: 100%;
-    box-shadow: 0 3px 5px rgb(146, 139, 139);
+    box-shadow: 0 2px 4px rgb(0, 0, 0);
     @include flex-center;
     @media screen and (min-width: $breakpoint) {
         height: toRem(80);

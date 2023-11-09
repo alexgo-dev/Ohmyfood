@@ -1,52 +1,70 @@
 .footer {
     background-color: #353535;
     color: white;
-    padding: toRem(40) 0rem toRem(16) 0rem;
+    padding: toRem(22) 0 toRem(16) 0;
+
     @media screen and (min-width: $breakpoint) {
         display: flex;
         flex-direction: row-reverse;
-        padding-right: toRem(112);
         align-items: center;
+        padding: toRem(70) 0 0 0;
+        
+    }
+
+    h2 {
+        font-family: $font-title;
+        font-size: 18px;
+        padding-left: toRem(25);
+
+        @media screen and (min-width: $breakpoint) {
+            margin: 0 toRem(50) toRem(16) toRem(50);
+        }
+    }
+
+    h3 {
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    i {
+        width: 13px;
+        padding-right: toRem(8);
+    }
+
+    a {
+        color: white;
+    }
+
+    ul {
+        padding-left: toRem(25);
+        margin: 0;
+
+        @media screen and (min-width: $breakpoint) {
+            display: flex;
+        }
+    }
+
+    li {
+        padding-bottom: toRem(7);
+
+        @media screen and (min-width: $breakpoint) {
+            margin-bottom: 0.5em;
+            padding-left: toRem(10);
+        }
     }
 
     &__title {
         font-family: "Shrikhand", cursive;
+
+        h2 {
+            font-size: 18px;
+            margin-top: 0;
+        }
     }
-    h2 {
-        font-size:18px;
-    }
+
     &__logo {
         display: flex;
         align-items: baseline;
         gap: 0.5em;
     }
-}
-
-footer a {
-    color: white;
-    @media screen and (min-width: $breakpoint) {
-        margin-left: toRem(80)
-        }
-}
-
-.footer ul {
-    @media screen and (min-width: $breakpoint) {
-        display: flex;
-    }
-}
-
-.footer li {
-    @media screen and (min-width: $breakpoint) {
-        margin-bottom: 0.5em;
-        padding-left: 1em;
-    }
-}
-
-.footer h2 {
-    font-family: $font-title;
-}
-
-.footer h3 {
-    font-weight: 400;
-    font-size: 16px;
 }

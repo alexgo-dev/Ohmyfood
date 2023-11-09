@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Ohmyfood</title>
 </head>
+
 <body>
     <header class="banner">
         <div class="banner__arrow">
@@ -21,14 +23,16 @@
         </div>
     </header>
     <div class="menu__image">
-        <img src="../assets/images/restaurants/noteenchantee.jpg"
-            alt="2 assiettes contenant des plats préparés">
+        <img src="../assets/images/restaurants/noteenchantee.jpg" alt="2 assiettes contenant des plats préparés">
     </div>
     <div class="container">
         <div class="container__banner">
             <div class="container__title">
                 <h2>La note enchantée
-                    <i class="fa-regular fa-heart"></i>
+                    <label class="heart-toggle">
+                        <input type="checkbox" class="heart-checkbox">
+                        <i class="fa-regular fa-heart"></i>
+                    </label>
                 </h2>
             </div>
         </div>
@@ -180,43 +184,36 @@
         </div>
         <div class="order">
             <button class="order__button">Commander</button>
-          </div>
+        </div>
     </div>
     <footer>
         <div class="footer">
-            <a href="#">
-                <div class="footer_title ">
-                    <h2>Ohmyfood</h2>
-                </div>
-            </a>
+            <div class="footer__title ">
+                <h2>Ohmyfood</h2>
+            </div>
             <ul>
                 <li>
-                    <a href="#">
-                        <h3 class="footer_logo">
-                            <i class="fa-solid fa-utensils"></i>
+                    <h3 class="footer__logo">
+                        <i class="fa-solid fa-utensils"></i>
+                        <a href="#">
                             Proposer un restaurant
-                        </h3>
-                    </a>
+                        </a>
+                    </h3>
                 </li>
                 <li>
-                    <a href="#">
-                        <h3 class="footer_logo">
-                            <i class="fa-solid fa-handshake-angle"></i> Devenir partenaire
-                        </h3>
-                    </a>
+                    <h3 class="footer__logo">
+                        <i class="fa-solid fa-handshake-angle"></i> Devenir partenaire
+                    </h3>
                 </li>
                 <li>
-                    <a href="#">
-                        <h3>Mentions légales</h3>
-                    </a>
+                    <h3>Mentions légales</h3>
                 </li>
                 <li>
-                    <a href="#">
-                        <h3>Contact</h3>
-                    </a>
+                    <a href="mailto:contact@ohmyfood.com">Contact</a>
                 </li>
             </ul>
         </div>
     </footer>
 </body>
+
 </html>

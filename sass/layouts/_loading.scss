@@ -12,7 +12,7 @@
 }
 
 .logo {
-    font-family: shrikhand, sans-serif;
+    @include font-shri;
     font-size: 124px;
     display: flex;
     justify-content: center;
@@ -75,51 +75,5 @@
 @for $i from 1 through 8 {
     .logo__letter:nth-child(#{$i}) {
         animation-delay: #{($i - 1) * 0.2s};
-    }
-}
-
-@keyframes loader {
-    80% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-        z-index: 2;
-    }
-}
-
-@keyframes fade-in {
-    to {
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes pulsate {
-    0% { 
-        opacity: 0.5;
-    }
-    12% { 
-        opacity: 1;
-    }
-    25% {
-        opacity: 0.5;
-    }
-    38% { 
-        opacity: 1;
-    }
-    50% { 
-        opacity: 0.5;
-    }
-    63% { 
-        opacity: 1;
-    }
-    75% { 
-        opacity: 0.5;
-    }
-    83% { 
-        opacity: 1;
-    }    
-    100% { 
-        opacity: 0;
     }
 }

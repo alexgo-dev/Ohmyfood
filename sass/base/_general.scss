@@ -8,6 +8,14 @@ html {
 
 body {
     margin: 0;
+    overflow-x: hidden;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    display: none;
 }
 
 h1 {

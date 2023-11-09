@@ -1,19 +1,65 @@
-@keyframes menuFadeIn {
+@keyframes fill {
+    0% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes loader {
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        z-index: 2;
+    }
+}
+
+@keyframes fade-in {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInCategory {
     0% {
         opacity: 0;
-        height: 0;
-      }
-      100% {
+        transform: translateX(-180px);
+    }
+    100% {
         opacity: 1;
-        height: 100%;
-      }
-    }    
+        transform: translateY(0);
+    }
+}
 
-    @keyframes fill {
-      0% {
-          opacity: 0.9;
-        }
-        100% {
-          opacity: 1;
-        }
-      }    
+@-webkit-keyframes pulsate {
+    0% {
+        opacity: 0.5;
+    }
+    12% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0.5;
+    }
+    38% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    63% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0.5;
+    }
+    83% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
